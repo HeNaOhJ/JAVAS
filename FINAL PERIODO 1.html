@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head >
+	<link rel="stylesheet" href="js.css">
+	<title>FINAL DE TECNOLOGÍA</title>
+</head>
+<body>
+    <a href="JAVAS.html"><div class="js">volver</div></a>
+	<div class="f1"></div>
+	<div class="f3" onmousedown="xd(event)"><div class="f4" id="circulo"></div></div>
+	<div class="d"><h1>T I E M P O:</h1>
+<div onload="clock()" class="f" id="hora"></div>
+<div class="f5"><h1>S C O R E:</h1>
+<div onload="aleatorio()" class="f" id="contador"></div>
+
+
+
+
+
+
+	<script>
+		var tiempo= 10;
+		var resp;
+   var time = function (){
+	document.getElementById('hora').innerHTML = tiempo;
+    if (tiempo==0) {
+resp=prompt("Quiere volver a jugar?. responda si o no");
+                if (resp=="si") {
+          tiempo=20;
+          cont=0;
+        }else{
+            clearInterval(a);
+            cont=0;
+        }        
+    }else{
+        tiempo=tiempo-1;
+    } 
+}
+a=setInterval(time,1000);
+var cont=0;
+ function xd(event){
+ var x = event.clientX;
+   var y = event.clientY;
+   circulo.style.left= x-824+"px";
+   circulo.style.top= y-110+"px";
+		document.getElementById('contador').innerHTML = cont;
+   cont=cont+20;
+}
+
+	</script>
+
+	</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head >
+	<link rel="stylesheet" href="js.css">
+	<title>ACTIVIDAD 5 JS</title>
+</head>
+<body onkeypress="mover()" >
+		<a href="JAVAS.html"><div class="js">volver</div></a>
+	<div class="b">
+		<div class="c1" id="cuadrado"></div>
+	</div>
+</div>
+
+	<script>
+		var numx= 10;
+		var numy= 10;
+		cuadrado.style.top=numx+"px";
+		cuadrado.style.left=numy+"px";	
+function mover(){
+			if(event.code=="keyW"&&o==0){
+				numx=numx-5;
+				cuadrado.style.top=numx+"px";
+				}
+			if(event.code=="keyS"){
+				numx=numx+5;
+				cuadrado.style.top=numx+"px";
+				}
+			if(event.code=="keyA"){
+				numy=numy-5;
+				cuadrado.style.left=numy+"px";
+				}
+			if(event.code=="keyD"){
+				numy=numy+5;
+				cuadrado.style.left=numy+"px";
+				}
+}
+		</script>
+	</body></html>
