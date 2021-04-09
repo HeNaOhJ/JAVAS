@@ -202,3 +202,17 @@ height:100px;
 	border:solid #16c79a 4px; 
 	display:all;
 }
+.a6{
+	position: absolute;
+	top: 2%;
+	left:50% ;
+	width: 10%;
+	height: 8%;
+		border-radius:10px;
+		color: white;
+	font-family: 'stencil';
+	padding: 5px;
+	border:solid #0f3057 4px; 
+	font-size: 30px;
+
+}
